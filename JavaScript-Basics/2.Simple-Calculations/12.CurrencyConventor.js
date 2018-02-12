@@ -48,8 +48,21 @@ function currencyConventor([arg1, arg2, arg3]) {
             break;
     }
 }
-usdToBgn([20, 'BGN', 'USD']);
-usdToBgn([20, 'USD', 'BGN']);
-usdToBgn([20, 'BGN', 'EUR']);
-usdToBgn([20, 'EUR', 'GBP']);
-usdToBgn([20, 'USD', 'EUR']);
+
+currencyConventor([20, 'BGN', 'USD']);
+currencyConventor([20, 'USD', 'BGN']);
+currencyConventor([20, 'BGN', 'EUR']);
+currencyConventor([20, 'EUR', 'GBP']);
+currencyConventor([20, 'USD', 'EUR']);
+
+function currencyConventor2 ([currencyValue, inputCurrency, outputCurrency]) {
+ let currencyRate = { 'USD': 1.79549, 'EUR': 1.95583, 'GBP': 2.53405, 'BGN': 1 }
+ let result = (currencyRate[inputCurrency] * currencyValue) / currencyRate[outputCurrency]
+ console.log(`${result.toFixed(2)} ${outputCurrency}`)
+}
+
+currencyConventor2([20, 'BGN', 'USD']);
+currencyConventor2([20, 'USD', 'BGN']);
+currencyConventor2([20, 'BGN', 'EUR']);
+currencyConventor2([20, 'EUR', 'GBP']);
+currencyConventor2([20, 'USD', 'EUR']);
