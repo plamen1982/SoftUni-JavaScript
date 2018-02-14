@@ -2,10 +2,12 @@ function trainingLabSeats([l, w]) {
     let lengthOfSeat = 1.2;
     let widthOfSeat = 0.7;
     let widthOfCorridor = 1;
+
     let numberOfSeatsOnLength = Math.floor(l / lengthOfSeat)
     let widthWithoutCorridor = w - widthOfCorridor;
     let numberOfSeathOnWidth = Math.floor(widthWithoutCorridor / widthOfSeat)
     let numberOfSeats = (numberOfSeathOnWidth * numberOfSeatsOnLength) - 3;
+    
     console.log(numberOfSeats)
 }
 
