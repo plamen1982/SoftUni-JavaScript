@@ -1,6 +1,7 @@
 function findGreaterNumber([arg1, arg2]) {
-    const number1 = Number(arg1);
-    const number2 = Number(arg2);
+    const number1 = parseInt(arg1);
+    const number2 = parseInt(arg2);
+
     if(number1 > number2) {
         console.log(number1)
     } else if(number1 < number2) {
