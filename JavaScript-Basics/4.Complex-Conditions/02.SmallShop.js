@@ -1,7 +1,9 @@
 function smallShop([nameItem, city, numberItems]) {
     numberItems = Number(numberItems);
+    city = city.toLowerCase();
+    nameItem = nameItem.toLowerCase();
 
-    if(city === 'Sofia') {
+    if(city === 'sofia') {
         switch(nameItem) {
             case 'coffee':
                 console.log( numberItems * 0.5 );
@@ -19,7 +21,7 @@ function smallShop([nameItem, city, numberItems]) {
                 console.log( numberItems * 1.6 );
                 break;
         }
-    } else if(city === 'Plovdiv') {
+    } else if(city === 'plovdiv') {
         switch(nameItem) {
             case 'coffee':
                 console.log( numberItems * 0.4 );
@@ -37,7 +39,7 @@ function smallShop([nameItem, city, numberItems]) {
                 console.log( numberItems * 1.5 );
                 break;
         }
-    } else if(city === 'Varna') {
+    } else if(city === 'varna') {
         switch(nameItem) {
             case 'coffee':
                 console.log( numberItems * 0.45 );
