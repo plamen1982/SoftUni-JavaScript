@@ -4,6 +4,9 @@
   "description": "",
   "main": "main.js",
   "author": "PH",
+  "scripts": {
+    "start": "electron ."
+  },
   "license": "MIT",
   "dependencies": {
     "electron": "^1.8.2"
