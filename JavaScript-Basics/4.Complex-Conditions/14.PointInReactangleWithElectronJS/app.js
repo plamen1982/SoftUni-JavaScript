@@ -53,11 +53,7 @@ function draw() {
 function reset () {
     
     let formObj = document.getElementById('form');
-    let canvas = document.getElementById('a');
-    let context = canvas.getContext('2d');
-
     formObj.reset();    
-    context.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 
