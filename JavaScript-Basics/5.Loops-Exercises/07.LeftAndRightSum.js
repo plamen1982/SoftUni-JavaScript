@@ -1,4 +1,5 @@
 function leftAndRightSum(args) {
+    
     let n = Number(args[0]);
     let sumLeft = 0;
     let sumRight = 0;
