@@ -52,7 +52,6 @@ function operationsBetweenNumbers(args) {
             console.log(`${num1} % ${num2} = ${result}`);   
         }
     }
-
 }
 
 operationsBetweenNumbers([10, 12, '+']);
