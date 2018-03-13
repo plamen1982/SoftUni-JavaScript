@@ -12,21 +12,13 @@ function histogram(args) {
         currentNumber = Number(args[i]);
         if(currentNumber < 200) {
             countP1 += 1;
-        }
-
-        if(currentNumber >= 200 && currentNumber < 400) {
+        } else if(currentNumber < 400) {
             countP2 += 1;
-        }
-
-        if(currentNumber >= 400 && currentNumber < 600) {
+        } else if(currentNumber < 600) {
             countP3 += 1;
-        }
-
-        if(currentNumber >= 600 && currentNumber < 800) {
+        } else if(currentNumber < 800) {
             countP4 += 1;
-        }
-
-        if(currentNumber >= 800 && currentNumber <= 1000) {
+        } else if(currentNumber >= 800) {
             countP5 += 1;
         }
     }
