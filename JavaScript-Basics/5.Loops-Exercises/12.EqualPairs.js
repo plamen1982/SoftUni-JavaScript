@@ -1,4 +1,5 @@
 function equalPairs(args) {
+    
     let n = Number(args[0]);
     let arrayOfPairs = [];
     let currentSumPair = 0; 
@@ -39,28 +40,28 @@ function equalPairs(args) {
 
 //second solution
 
-function equalPairs2(args) {
-    let n = Number(args[0]);
-    let maxDiff = 0;
-    let diff = 0;
-    let firstSum = 0;
-    let nextSum = 0;
+// function equalPairs2(args) {
+//     let n = Number(args[0]);
+//     let maxDiff = 0;
+//     let diff = 0;
+//     let firstSum = 0;
+//     let nextSum = 0;
 
-   for(let i = 1; i <= 2*n - 2; i += 2) {
+//    for(let i = 1; i <= 2*n - 2; i += 2) {
 
-    firstSum = Number(args[i]) + Number(args[i+1]);
-    nextSum = Number(args[i+2]) + Number(args[i+3]);
-    diff = Math.abs(firstSum - nextSum);
-    if(maxDiff < diff) {
-        maxDiff = diff;
-    }
-   }
-    if(maxDiff == 0 || n == 1) {
-        console.log(`Yes, value=${Number(args[1]) + Number(args[2])}`)
-    } else {
-        console.log(`No, maxdiff=${maxDiff}`)
-    }
-}
+//     firstSum = Number(args[i]) + Number(args[i+1]);
+//     nextSum = Number(args[i+2]) + Number(args[i+3]);
+//     diff = Math.abs(firstSum - nextSum);
+//     if(maxDiff < diff) {
+//         maxDiff = diff;
+//     }
+//    }
+//     if(maxDiff == 0 || n == 1) {
+//         console.log(`Yes, value=${Number(args[1]) + Number(args[2])}`)
+//     } else {
+//         console.log(`No, maxdiff=${maxDiff}`)
+//     }
+// }
 
 // equalPairs2([3, 1, 2, 0, 3, 4, -1]);
 // equalPairs2([2, 1, 2, 2, 2]);
