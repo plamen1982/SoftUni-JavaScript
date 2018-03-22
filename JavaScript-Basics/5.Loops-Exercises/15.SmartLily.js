@@ -5,14 +5,14 @@ function smartLily(args) {
 
     let savedMoney = 0;
     let numberOfToys = 0;
-    let count = 0;
+    let multiply = 0;
     let diff;
     
 
     for(let i = 1; i <= LilysYears; i++) {
         if(i % 2 == 0) {
-            count += 1
-            savedMoney += 10 * count;
+            multiply += 1
+            savedMoney += 10 * multiply;
             savedMoney -= 1;
         } else {
             numberOfToys += 1;
