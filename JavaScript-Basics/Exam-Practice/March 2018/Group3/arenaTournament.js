@@ -28,18 +28,15 @@ function arenaTournament(args) {
     let priceforSingleItem = priceAfterDiscoutn / 5;
     let countItems = 0;
     // console.log(priceforSingleItem)
-    while(nikisPoints >= priceforSingleItem) {
+
+    for(let i = 0; i < 5 && nikisPoints >= priceforSingleItem; i++) {
         nikisPoints = nikisPoints - priceforSingleItem
-        // console.log(priceAfterDiscoutn)
         countItems++
-        if (countItems == 5) {
-            break
-        }
     }
     // console.log(countItems)
     // console.log(nikisPoints)
 
-    if(countItems >= 5) {
+    if(countItems === 5) {
         console.log(`Items bought: ${countItems}`)
         console.log(`Arena points left: ${nikisPoints}`)
         console.log(`Success!`)
@@ -53,5 +50,4 @@ function arenaTournament(args) {
 
 arenaTournament(["20000", "Dire Maul", "Friday", "Legendary"])
 arenaTournament(["10000", "Nargand", "Monday", "Legendary"])
-
 arenaTournament(["15000", "Gurubashi", "Thursday", "Poor"])
