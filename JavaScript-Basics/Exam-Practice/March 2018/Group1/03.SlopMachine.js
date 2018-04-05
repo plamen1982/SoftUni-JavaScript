@@ -10,7 +10,6 @@ function slotMachine(args) {
 // console.log('a'.charCodeAt())
 
 let resultN = String.fromCharCode(symbolN.charCodeAt() + NumberN1);
-// console.log(String.fromCharCode(resultN))
 let resultM = String.fromCharCode(symbolM.charCodeAt() + NumberM1);
 let resultK = String.fromCharCode(symbolK.charCodeAt() + NumberK1);
 let endResult = resultN + resultM + resultK
