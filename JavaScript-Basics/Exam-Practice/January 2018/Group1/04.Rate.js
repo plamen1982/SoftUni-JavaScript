@@ -1,6 +1,12 @@
 function rate(args) {
-    let money = Number(args[0])
-    let months = Number(args[1]) 
+    let params = args;
+    // if(args[0].indexOf('\n')>-1) {
+    // params = args[0].split('\n');
+    // }
+
+
+    let money = Number(params[0])
+    let months = Number(params[1]) 
 
 
     function simpleRate(money, months) {

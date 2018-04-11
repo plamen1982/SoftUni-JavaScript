@@ -1,7 +1,14 @@
 function triangle(args) {
-    let a = Number(args[0])
-    let b = Number(args[1])
-    let c = Number(args[2])
+    let params = args
+
+    // let params = args;
+    // if(args[0].indexOf('\n')>-1) {
+    // params = args[0].split('\n');
+    // }
+
+    let a = Number(params[0])
+    let b = Number(params[1])
+    let c = Number(params[2])
     if(a < (b + c) && b < (a + c) && c <(a + b)) {
         if(a == b && a == c) {
             console.log(`Triangle with sides ${a}, ${b} and ${c} is equilateral.`)
