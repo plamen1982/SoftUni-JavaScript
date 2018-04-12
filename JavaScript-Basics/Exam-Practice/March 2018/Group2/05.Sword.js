@@ -47,5 +47,5 @@ function sword(args) {
 
 // sword([4])
 // sword([5])
-// sword([6])
+sword([6])
 // sword([7])
